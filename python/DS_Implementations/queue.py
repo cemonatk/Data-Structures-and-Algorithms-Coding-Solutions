@@ -7,7 +7,7 @@ class Queue(object):
 		return self.items == []
 	
 	def enqueue(self, item):
-		self.items.insert(0, item)
+		self.items.insert(len(self.items), item)
 	
 	def dequeue(self):
 		return self.items.pop()
